@@ -42,11 +42,14 @@ svg{
     width: 20px;
 }
 
+
+
 .container{
+    height: 100vh;
     background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 1fr 4fr; 
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: 
     "dashboard header"
     "dashboard cards"
@@ -57,10 +60,24 @@ svg{
     background-color: #1a92d3;
     color: white;
     grid-area: dashboard;
+    display: grid;
+    padding: 30px;
+    padding-bottom: 12rem;
+}
+
+.dashboard div{
+    display: grid;
+    grid-template-columns: 20px 30px;
+    gap: 10px;
+    align-items: center;
 }
 
 .header{
     background-color: #fbfbfb;
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5); ;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
     grid-area: header;
+}
+
+svg path{
+    fill: #fff;
 }
