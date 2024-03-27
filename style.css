@@ -37,5 +37,30 @@
     font-style: normal;
   }
 
-  
-  
+
+svg{
+    width: 20px;
+}
+
+.container{
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 1fr 4fr; 
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "dashboard header"
+    "dashboard cards"
+    ;
+}
+
+.dashboard{
+    background-color: #1a92d3;
+    color: white;
+    grid-area: dashboard;
+}
+
+.header{
+    background-color: #fbfbfb;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5); ;
+    grid-area: header;
+}
