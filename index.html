@@ -8,25 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div>
-                <input type="text" placeholder="Search..." class="search-box">
-                <img src="notification-icon" alt="notification icon">
-                <img src="profile picture" alt="profile picture">
-                <p>Morgan Oakley</p>
-            </div>
-            <div>
-                <img src="profile picture" alt="">
-                <div>
-                    <small>Hi there,</small>
-                    <h3>Morgan Oakley (@morgan)</h3>
+            <div class="top">
+                <div class="search">
+                    <label for="search">
+                        <!-- <img src="./icons/profile/search.svg" alt=""> -->
+                        <span class="material-icons-outlined search-icon">
+                            search
+                        </span></label>
+                    <input type="text" name="search" id="search">
                 </div>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <div class="account">
+                    <button>
+                        <!-- <img src="./icons/profile/notification.svg" alt="notification icon"> -->
+                        <span class="material-icons-outlined"> notifications_active </span>
+                    </button>
+                    <!-- <img src="./icons/profile/morgan.svg" alt="profile picture"> -->
+                    <div class="picture"></div>
+                    <!-- <p>Morgan Oakley</p> -->
+                    <p class="name">Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="profile">
+                    <div class="picture"></div>
+                    <!-- <img id="profile-img" src="./icons/profile/morgan.svg" alt=""> -->
+                    <div class="profile-name">
+                        <p class="greeting">Hi there,</p>
+                        <div class="name">
+                            Morgan Oakley <span class="username">(@morgan)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
             </div>
         </div>
         <div class="dashboard">      
