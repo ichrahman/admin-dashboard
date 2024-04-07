@@ -195,6 +195,10 @@ ul{
   grid-area: projects;
 }
 
+.project-cards h3{
+  margin-bottom: 30px;
+}
+
 .project-card{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -227,9 +231,12 @@ ul{
 }
 
 .announcement-cards{
+    grid-area: announcement;
+}
+
+.announcement-card{
   width: 300px;
-  padding: 2rem;
-  grid-area: announcement;
+  padding: 1rem;
   background-color: white;
   border-radius: 11px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -248,12 +255,20 @@ ul{
 }
 
 .announcement-card ul li{
-  padding: 1rem;
+  padding: 1rem 0.5rem;
+  border-top: 1px solid #eee;
+}
+
+.announcement-card ul li:first-child{
+  border-top: 0;
 }
 
 .trending-cards{
   grid-area: trending;
-  padding: 2rem;
+}
+
+.trending-card{
+  padding: 1rem 0.8rem;
   background-color: white;
   border-radius: 11px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
