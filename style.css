@@ -191,8 +191,11 @@ ul{
   ;
 }
 
-.project-card{
+.project-cards{
   grid-area: projects;
+}
+
+.project-card{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 15px;
@@ -202,6 +205,7 @@ ul{
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 
 .icons{
   display:  flex;
@@ -222,13 +226,17 @@ ul{
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-.announcement-card{
+.announcement-cards{
   width: 300px;
   padding: 2rem;
   grid-area: announcement;
   background-color: white;
   border-radius: 11px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.announcement-card p{
+  font-size: 0.8rem;
 }
 
 .announcement-cards h3{
@@ -243,7 +251,7 @@ ul{
   padding: 1rem;
 }
 
-.trending-card{
+.trending-cards{
   grid-area: trending;
   padding: 2rem;
   background-color: white;
