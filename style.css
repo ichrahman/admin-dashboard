@@ -21,6 +21,10 @@ input{
   font: inherit;
 }
 
+ul{
+  list-style: none;
+}
+
 /* #notification-button{
   background-color: transparent;
   cursor: pointer;
@@ -33,7 +37,7 @@ input{
 
 .container{
     height: 100vh;
-    /* background-color: #e2e8f0; */
+    background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 1fr 4fr; 
     grid-template-rows: 1fr 4fr;
@@ -175,6 +179,7 @@ input{
 /* cards */
 
 .cards{
+  overflow: auto;
   display: grid;
   padding: 2rem;
   gap: 1rem;
@@ -192,23 +197,42 @@ input{
 
 .announcement-card{
   width: 300px;
-  padding: 1rem;
+  padding: 2rem;
   grid-area: announcement;
+  background-color: white;
+  border-radius: 11px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.announcement-cards h3{
+  margin: 10px 0 15px 0;
+}
+
+.announcement-card h5{
+  font-size: 1rem;
+}
+
+.announcement-card ul li{
+  padding: 1rem;
 }
 
 .trending-card{
   grid-area: trending;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 11px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-.trending-card h3{
-  margin-bottom: 20px;
+.trending-cards h3{
+  margin: 10px 0 15px 0;;
 }
 
 .tcard{
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .trending-card img{
